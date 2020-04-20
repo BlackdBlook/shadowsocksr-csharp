@@ -554,7 +554,7 @@ namespace Shadowsocks.View
                 }
             }
             */
-            _modifiedConfiguration.index = ServersListBox.SelectedIndex;
+            _modifiedConfiguration.index = lstServers.SelectedIndex;
             controller.SaveServersConfig(_modifiedConfiguration);
             this.Close();
         }
