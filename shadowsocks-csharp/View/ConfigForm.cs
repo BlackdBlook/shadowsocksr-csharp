@@ -541,6 +541,7 @@ namespace Shadowsocks.View
                 MessageBox.Show(I18N.GetString("Please add at least one server"));
                 return;
             }
+            /*
             if (_oldSelectedID != null)
             {
                 for (int i = 0; i < _modifiedConfiguration.configs.Count; ++i)
@@ -552,6 +553,8 @@ namespace Shadowsocks.View
                     }
                 }
             }
+            */
+            _modifiedConfiguration.index = ServersListBox.SelectedIndex;
             controller.SaveServersConfig(_modifiedConfiguration);
             this.Close();
         }
